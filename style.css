@@ -231,6 +231,53 @@ FEATURES
 */
 
 #features {
-  height: 1000px;
+  padding-top: 8vw;
   background-color: rgb(235, 212, 235);
+}
+
+.books {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+.book {
+width: 25%;
+padding: 24px;
+}
+
+.book__image--wrapper {
+margin-bottom: 8px;
+border-radius: 4px;
+overflow: hidden;
+}
+
+.book__img {
+max-height: 380px;
+transition: all 300ms ease;
+}
+
+.book:hover .book__img {
+    transform: scale(1.05);
+}
+
+.book__title {
+
+}
+
+.book__ratings {
+
+}
+
+.star {
+
+}
+
+.book__price {
+
+}
+
+.book__price--normal {
+
 }
