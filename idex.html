@@ -31,22 +31,31 @@
               <a href="#features" class="nav__link nav__link--primary">Books</a>
             </li>
           </ul>
-        </div>
-        <button class="btn__menu" onclick="openMenu()">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <div class="menu__backdrop">
-          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-            <i class="fa-solid fa-times"></i>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
           </button>
-          <ul class="menu__links">
-            <li class="menu__list">
-               <a href="#landing" class="menu__link"></a>Home</li>
-            <li class="menu__list">
-               <a href="#features" class="menu__link"></a>Books</li>
-            <li class="menu__list">
-               <a href="#" class="menu__link no-cursor"></a>Contact</li>
-          </ul>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fa-solid fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="#landing" class="menu__link" onclick="closeMenu()"
+                  >Home</a
+                >
+              </li>
+              <li class="menu__list">
+                <a href="#features" class="menu__link" onclick="closeMenu()"
+                  >Books</a
+                >
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link no-cursor" onclick="closeMenu()"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <header>
@@ -56,7 +65,9 @@
             <h2 class="header__desription--para">
               Find your dream book with <span class="violetblue">Library</span>
             </h2>
-            <button class="btn">Browse Books</button>
+            <a href="#features">
+              <button class="btn">Browse Books</button>
+            </a>
           </div>
           <figure class="header__image--wrapper">
             <img src="./assets-ecombooks/assets/Undraw_Books.svg" />
